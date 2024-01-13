@@ -1,8 +1,8 @@
 
 function ok() {
    
-    var name= document.getElementById("name").value;
-    alert("HI"+ ' ' + name + ' ' + "fuck you"); 
+    let name= document.getElementById("name").value;
+    alert("HI"+ ' ' + name + ' ' + ""); 
     
 
 
