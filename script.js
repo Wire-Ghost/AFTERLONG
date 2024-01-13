@@ -2,7 +2,8 @@
 function ok() {
    
     let name= document.getElementById("name").value;
-    alert("HI"+ ' ' + name + ' ' + ""); 
+    let user= name.toLocaleUpperCase () ;
+    alert("HI"+ ' ' + user + ' ' + ""); 
     
 
 
