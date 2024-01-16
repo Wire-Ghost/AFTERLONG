@@ -35,45 +35,96 @@ div.relative {
     top: 150px;
 }
 
-.dropdownbutton {
-    background-color: black;
-    color:aquamarine;
-    padding: 16px;
-    font-size: 16px;
-    border-color: wheat;
-    border-radius: 10%;
-  }
-  
-  .dropdown {
+.intro {
+  font-size: 50px;
+  color: beige; 
+  text-align: center;
+
+}
+
+.dropdown-1 {
     position: relative;
     display: inline-block;
     width: 3cm;
   }
+
+.dropdownbutton-1 {
+    background-color: black;
+    color:aquamarine;
+    padding: 16px;
+    font-size: 16px;
+    border-radius: 10%;
+  }
   
-  .dropdown-content {
+  .dropdown-content-1 {
     display: none;
     position: absolute;
     background-color:beige;
     min-width: 80px;
     left: 0.6cm;
     border-radius: 5px 5px 5px 5px;
-}
-  
-  .dropdown-content a {
+   }
+
+  .dropdown-content-1 a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
+  .dropdown-1:hover 
+  .dropdown-content-1 {display: block;
+                       background-color: beige;}
+                   
+  .dropdown-content-1 a:hover{background-color:blanchedalmond;}
+
+  .dropdown-1:hover 
+  .dropdownbutton-1 {background-color: black;
+                     color: white;}
+
+.dropdown-2 {
+  position: relative;
+  display: inline-block;
+  width: 3cm;
+} 
+
+.dropdownbutton-2 {
+  background-color: black;
+  color:aquamarine;
+  padding: 16px;
+  font-size: 16px;
+  border-radius: 10%;
+}
+
+.dropdown-content-2 {
+  display: none;
+  position: absolute;
+  background-color:beige;
+  min-width: 80px;
+  left: 0.6cm;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.dropdown-content-2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-2:hover 
+  .dropdown-content-2 {display: block;
+                       background-color: beige;}
   
-  .dropdown:hover 
-  .dropdown-content {display: block;
-                     background-color: beige;}
-  
-  .dropdown-content a:hover
+.dropdown-content-2 a:hover
   {background-color:blanchedalmond;}
 
-  .dropdown:hover 
-  .dropdownbutton {background-color: wheat;
-                   color: black;}
+.dropdown-2:hover 
+  .dropdownbutton-2 {background-color: black;
+                     color: white;}
+
+
+                     
+                     
+
+          
