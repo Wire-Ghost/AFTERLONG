@@ -5,6 +5,6 @@ function ok() {
     let user=name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
     alert("Hi"+ ' ' + user + ' ' + " "); 
 
-    window.location.href="idkwhatimmaking.netlify.app";
+    window.location.href="https://idkwhatimmaking.netlify.app/";
 
 }
