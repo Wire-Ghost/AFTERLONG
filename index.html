@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!--
 <div class="dropdown-1">
    <p class="dropdownbutton-1">
         Who are you ?
@@ -25,14 +26,24 @@
      <div class="dropdown-content-2">
         <p>No need to say cause IDC</p>
      </div>
-</div>     
+</div>
 
+-->
 
 <div class="name">
- <input type="text" id="name" placeholder="ENTER YOUR NAME">
- <br>
- <button onclick="ok()" class="ok">ok</button>
-</div> 
+    <input type="text" id="name" placeholder="ENTER YOUR NAME">
+    <br>
+    <button onclick="showPopup()" class="ok">I'M HERE</button>
+</div>
+
+<div id="custom-popup" class="popup">
+    <div class="popup-content">
+        <p id="popup-message">Hi there!</p>
+        <button id="confirm-button" onclick="redirect()">Proceed</button>
+        <button id="cancel-button" onclick="closePopup()">Cancel</button>
+    </div>
+</div>
+
 
 <div class="div1">   
     <i>HELLO</i>

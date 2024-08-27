@@ -1,10 +1,24 @@
+function showPopup() { 
 
-function ok() {
-   
-    let name= document.getElementById("name").value;
-    let user=name.charAt(0).toUpperCase()+name.slice(1).toLowerCase();
-    alert("Hi"+ ' ' + user + ' ' + " "); 
+    const name = document.getElementById('name').value.trim();
 
-    window.location.href="https://idkwhatimmaking.netlify.app/";
+    const popupMessage=name ? `Hi ${name}!` : "Hi there!";
+    document.getElementById('popup-message').textContent=popupMessage;
+
+    document.getElementById('custom-popup').style.display='flex';
 
 }
+
+function redirect() {
+    
+    closePopup();
+
+    
+    window.location.href = "https://idkwhatimmaking.netlify.app";
+}
+
+function closePopup() {
+   
+    document.getElementById('custom-popup').style.display = 'none';
+}
+
