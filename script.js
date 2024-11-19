@@ -22,10 +22,12 @@ function closePopup() {
     document.getElementById('custom-popup').style.display = 'none';
 }
 
-const [entry] = performance.getEntriesByType("navigation");
-
-// Show it in a nice table in the developer console
-console.table(entry.toJSON());
-
-if (entry["type"] === "back_forward")
-    location.reload();
+window.addEventListener( "pageshow", function ( event ) {
+    var historyTraversal = event.persisted || 
+                           ( typeof window.performance != "undefined" && 
+                                window.performance.navigation.type === 2 );
+    if ( historyTraversal ) {
+      // Handle page restore.
+      window.location.reload();
+    }
+  });
