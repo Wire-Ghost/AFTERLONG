@@ -22,8 +22,10 @@ function closePopup() {
     document.getElementById('custom-popup').style.display = 'none';
 }
 
-var perfEntries = performance.getEntriesByType("navigation");
+const [entry] = performance.getEntriesByType("navigation");
 
-if (perfEntries[0].type === "back_forward") {
+// Show it in a nice table in the developer console
+console.table(entry.toJSON());
+
+if (entry["type"] === "back_forward")
     location.reload();
-}
