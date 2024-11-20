@@ -29,3 +29,7 @@ function closePopup() {
 		}
 	};
 })();
+
+async (params) => {
+    
+}
