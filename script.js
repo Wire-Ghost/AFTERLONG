@@ -29,3 +29,10 @@ function closePopup() {
 		}
 	};
 })();
+
+function sendData() { 
+    const data = document.getElementById('name').value; 
+    // Store data in local storage 
+    localStorage.setItem('data', data); 
+    window.location.href = 'file:///home/wire-ghost/Documents/redirect-1/index.html'; 
+} 
